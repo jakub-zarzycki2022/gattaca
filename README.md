@@ -1,0 +1,37 @@
+# GATTACA	
+
+Suite of experiments for running Deep Reinforcement Learning for control of Probabilistic Boolean Networks.
+
+# Environment Requirements
+- CUDA 11.3+
+- Python 3.9+
+
+# Installation
+## Local
+- Create a python environment using PIP:
+    ```sh
+    python3 -m venv .env
+    source .env/bin/activate
+    ```
+    For the last line, use `.\env\Scripts\activate` if on Windows.
+- Install [PyTorch](https://pytorch.org/get-started/locally/):
+    ```sh
+    python -m pip install torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu113
+    ```
+- Install the package and its dependencies dependencies:
+    ```sh
+    python -m pip install -r requirements.txt
+    ```
+
+# Running
+- Use `train_gattaca.py` to train a DDQN agent. It's a command line utility so you can check out what you can do with it using `--help`.
+    E.g.:
+    ```sh
+     python train_gattaca.py --size 67 --assa-file  bortezomib_fixed.ispl --exp-name example
+    ```
+
+- Use `model_tester.py` to get strategies and statistics about the model.
+E.g.:
+```sh
+python model_tester.py -n 67 --assa-file  bortezomib_fixed.ispl --model-path models/None_pbn67_example/bdq_0.pt --attractors 10 --runs 10
+```
