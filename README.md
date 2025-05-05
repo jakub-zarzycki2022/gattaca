@@ -37,7 +37,7 @@ https://drive.google.com/drive/folders/1qLV0IdBfFg-MFj28WtYGdy6pYK63YfUs?usp=sha
 - Use `model_tester.py` to get strategies and statistics about the model.
 E.g.:
 ```sh
-python model_tester.py -n 67 --assa-file  bortezomib_fixed.ispl --model-path models/None_pbn67_example/bdq_0.pt --attractors 10 --runs 10
+python model_tester.py -n 67 --assa-file  bortezomib_fixed.ispl --model-path models/pbn67/bdq_final.pt --attractors 10 --runs 10
 ```
 
 | Argument       | Description                                                          |
@@ -45,5 +45,5 @@ python model_tester.py -n 67 --assa-file  bortezomib_fixed.ispl --model-path mod
 | `-n`           | (Required) Number of nodes in the model.                       |
 | `--assa-file`  | (Required) Path to the `.ispl` file.     |
 | `--model-path` | (Required) Path to the trained PyTorch model `.pt` file.             |
-| `--attractors` | (Optional) Number of attractors to compute or analyze. It may be different that the total number of attractors             |
+| `--attractors` | (Optional) Number of source attractors to analyse. It may be smaller than the total number of attractors.             |
 | `--runs`       | (Optional) Number of test runs for averaging or robustness checking. |
