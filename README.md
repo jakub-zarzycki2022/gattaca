@@ -2,6 +2,8 @@
 
 Suite of experiments for running Deep Reinforcement Learning for control of Probabilistic Boolean Networks.
 
+This project extends our previous work [pbn-STAC](https://arxiv.org/abs/2402.08491) implemented in [pbn-STAC](https://github.com/jakub-zarzycki2022/pbn-stac) and [gym-pbn-STAC](https://github.com/jakub-zarzycki2022/gym-PBN-stac), which itself was besed on the original methods introduced in [Papagiannis, Georgios, et al., 2019](https://arxiv.org/abs/1909.03331) implemented in [gym-PBN](https://github.com/UoS-PLCCN/gym-PBN/tree/main), [pbn-rl](https://github.com/UoS-PLCCN/pbn-rl).
+
 # Environment Requirements
 - CUDA 11.3+
 - Python 3.9+
