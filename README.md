@@ -1,6 +1,6 @@
-# GATTACA	
+# Graph-based ATtractor-TArget Control Algorithm (GATTACA)
 
-Suite of experiments for running Deep Reinforcement Learning for control of Probabilistic Boolean Networks.
+Source code. trained models implementation of the GATTACA framework introduced in [A. Mizera, J. Zarzycki. Graph Neural Network-Based Reinforcement Learning for Controlling Biological Networks: The GATTACA Method (2025)](arxiv.com).
 
 This project extends our previous work [pbn-STAC](https://arxiv.org/abs/2402.08491) implemented in [pbn-STAC](https://github.com/jakub-zarzycki2022/pbn-stac) and [gym-pbn-STAC](https://github.com/jakub-zarzycki2022/gym-PBN-stac), which itself was based on the original methods introduced in [G. Papagiannis, S. Moschoyiannis et al., Deep Reinforcement Learning for Stabilization of Large-Scale Probabilistic Boolean Networks (2022)](https://ieeexplore.ieee.org/document/9999487) implemented in [gym-PBN](https://github.com/UoS-PLCCN/gym-PBN/tree/main) and [pbn-rl](https://github.com/UoS-PLCCN/pbn-rl).
 
